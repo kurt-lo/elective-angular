@@ -1,0 +1,15 @@
+<div>
+    <label>First Name:</label>
+    <input [(ngModel)]="firstName" name="firstName" type="text" required>
+  </div>
+  <div>
+    <label>Last Name:</label>
+    <input [(ngModel)]="lastName" name="lastName" type="text" required>
+  </div>
+  <div *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </div>
+  <div>
+    <button (click)="login()">Log in</button>
+  </div>
+  

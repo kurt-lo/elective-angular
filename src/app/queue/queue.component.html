@@ -1,0 +1,17 @@
+<!-- <div>
+    <h2>Add Queue</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="queueNumber">Queue Number:</label>
+        <input type="number" class="form-control" id="queueNumber" required [(ngModel)]="newQueue.queue_number" name="queueNumber">
+      </div>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div> -->
+
+  <div class="form-group">
+    <input class="form-control" type="number" [(ngModel)]="queueNumber">
+    <input class="form-control" type="text" [(ngModel)]="queueName">
+    <button class="btn btn-primary" (click)="insertQueue()">Insert Queue</button>
+  </div>
+

@@ -1,0 +1,27 @@
+<div class="content">
+    <h1 id="tableLabel">STUDENT LIST</h1>
+  
+    <table class="table table-striped" aria-labelledby="tableLabel" *ngIf="fetch">
+      <thead>
+        <tr class="table-success">
+          <th>Student ID</th>
+          <th>Queue Number</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+  
+    <tbody>
+      <tr *ngFor="let get of fetch">
+        <td>{{ get.student_id }}</td>
+        <td>{{ get.queue_number }}</td>
+        <td>
+          <a href='/update/{{get.idqueue}}'>Update</a>
+        </td>
+        <td><button (click)="onDelete(get.idqueue)">Delete</button></td>
+    </tbody>
+    </table>
+  </div>
+  
+
+  

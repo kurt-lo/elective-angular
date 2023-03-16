@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Angular CRUD Implementation</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>ID : </td>
+                <td>UserName : </td>
+                <td>LastName : </td>
+                <td>FirstName : </td>
+                <td>Enrollment Date : </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of students">
+                <td>{{ item.id }}</td>
+                <td>{{ item.username }}</td>
+                <td>{{ item.firstName }}</td>
+                <td>{{ item.lastName }}</td>
+                <td>{{ item.enrollmentDate }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

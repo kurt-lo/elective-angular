@@ -1,0 +1,12 @@
+<h2>Update Queue</h2>
+<form (submit)="onSubmit()">
+  <div>
+    <label>Queue Number:</label>
+    <input type="number" [(ngModel)]="queue_number" name="queue_number">
+  </div>
+  <div>
+    <label>Student ID:</label>
+    <input type="text" [(ngModel)]="student_id" name="student_id">
+  </div>
+  <button type="submit">Update</button>
+</form>
